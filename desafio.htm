@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Banco</title>
+</head>
+<body>
+
+    <h1> Simulador de Banco</h1>
+
+   
+    <p><strong>Saldo Atual:</strong> R$ <span id="saldoAtual">1000.00</span></p>
+
+    <hr>
+
+    <label for="operacao">Escolha a Operação:</label>
+    <select id="operacao">
+        <option value="consultar">Consultar saldo</option>
+        <option value="depositar">Depositar</option>
+        <option value="sacar">Sacar</option>
+        <option value="extrato">Ver extrato</option>
+    </select>
+
+    <br><br>
+
+    <label for="valor">Valor (R$):</label>
+    <input type="number" id="valor" placeholder="Informe o valor" step="1">
+
+    <br><br>
+
+    <button id="btnExecutar">Executar operação</button>
+
+    <hr>
+
+    
+    <h2>Resultado / Extrato:</h2>
+    <div id="resultado">Escolha uma operação e clique em Executar.</div>
+
+    <script src="desafio.js"></script>
+
+</body>
+</html>
